@@ -12,6 +12,6 @@ public class ProyectoMini
         float Media = 0.0f ;
 
         Media = (Numero1 + Numero2 +Numero3) / 3;
-        System.out.println("la media de los números ingresados es: " + Media);
+        System.out.println("la media de los números ingresados es : " + Media);
     }
 }
