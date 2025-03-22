@@ -11,8 +11,10 @@ public class EjercicioSiete {
             System.out.println("el número "+numEntero+" tiene una cifra ");
         }else if(numEntero >= 10 && numEntero <= 99){
             System.out.println("el número "+numEntero+" tiene dos cifras");
-        }else{
+        }else if (numEntero >= 100 && numEntero <= 999){
             System.out.println("el número "+numEntero+" tiene tres cifras");
+        }else{
+            System.out.println("error");
         }
     }
 }

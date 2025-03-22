@@ -39,12 +39,12 @@ public class HoraATexto {
         }
 
         //ahora convertir las horas en un formato d e12 horas 
-        int horas12 = (horas % 12 == 0) ? 12 : horas % 12;// se supone que esto convierte lo que esta en hora militar a hora colombiana
+        //int horas12 = (horas % 12 == 0) ? 12 : horas % 12;// se supone que esto convierte lo que esta en hora militar a hora colombiana
 /*una cosita antes esto ?: es lo mismo que un condicional pero abreviado asi que esto ? es como la priemra parte de si
  * : esto el else y si vuelve a aprecer eso  es el final 
  */
-        String periodo = (horas < 12) ? "de la mañana" :
-        (horas < 19) ? " de la tarde " : "de la noche ";
+        //String periodo = (horas < 12) ? "de la mañana" :
+//(horas < 19) ? " de la tarde " : "de la noche ";
     
 
 
