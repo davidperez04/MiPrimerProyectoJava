@@ -7,12 +7,12 @@ public class Ejercicio1Arrays {
 
         //leer los numeros que va acontener ese array
         for(int i = 0 ; i < numeros.length ; i++){
-            System.out.println("por favor ingrese el "+(i+1)+"° número del array");
+            System.out.print("por favor ingrese el "+(i+1)+"° número del array :");
             numeros[i] = scanner.nextInt();
         }
 
         //mostrar los numeros en el orden en fueron introducidos
-
+        System.out.println("los numeros ingresados fueron");
         for(int j: numeros){
             System.out.println(j);
         }
