@@ -36,10 +36,10 @@ import java.util.Scanner;
          //objviamente siguiendo el orden propuesto
          //voy a crear 3 contadores
          
-         int contador = 0;
-         int contador2 = 0;
+         //int contador = 0;
+         //int contador2 = 0;
          
-         for(int i = 0 ; i < 24 ; i++){
+         /*for(int i = 0 ; i < 24 ; i++){
              if((i>=0 && i < 3) || (i > 5 && i < 9)|| (i > 11 && i < 15) || (i > 17 && i < 21) ){
                  tabla3[i] = tabla1[contador];
                  contador++;
@@ -58,8 +58,43 @@ import java.util.Scanner;
  
 
          //bueno hay una forma mas optima de hacer este proceso, pero eso lo hago mañana porques estoy que me muero del cansancio.
+         /*ha pasado bastante tiempo pero voy a tratar de hacer la otra forma que es mucho mas optima 
+          * y esperemos que todo salga bien.
+         */
+
+         //lo que tengo que cambiar es la forma en la que se mezcaln los dos arrays creados en el tercer array
+         //mi idea es que el array 3 vaya de tres en tres por lo que en cada iteracion se debe llenar con 3 valores
+         int contador = 0;
+         int contador2 = 0;
+         for(int i = 0 ; i < tabla3.length ; i += 3){
+            //creo un for que guarde los tres valores de cada array
+            //se crea una condicion para determinar cuado se guardan los dadtos de un array y cuando del otro
+            
+            if(i == 0 || i % 2 == 0){
+               //se llenan con los datos de la primera tabla
+               for(int j = i ; j < (i+3) ; j++){
+                //lleno la tabla 3 con la tabla 1
+                tabla3[j] = tabla1[contador];
+                contador++;
+               }
+            }else{
+                //se llenan con los datos de la segunda tabla
+                for( int k = i ; k < (i+3) ; k++){
+                    //lleno la tabla 3 con la tabla 2
+                    tabla3[k] = tabla2[contador2];
+                    contador2++;
+                }
+            } 
+         }
+         System.out.println();
+         System.out.println(" la tabla 3 con la mezcla d ela sdos primeras tablas es :");
+         for(float k : tabla3){
+             System.out.print(k+" ");
+         
          scanner.close();
+         //lissto lo logramos.
  
  
      }
  }
+}
