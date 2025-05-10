@@ -32,6 +32,9 @@ public class Practica5 {
         for (float f : numeros_aleatorios) {
             System.out.print(f+" ");
         }
+
+        //otra forma de ordenar los elementos:
+        
         scanner.close();
     }
 }
